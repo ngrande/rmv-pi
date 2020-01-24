@@ -1,0 +1,14 @@
+[Unit]
+Description=RPi RMV LCD service
+Documentation=https://github.com/ngrande/rmv-pi
+After=network.target
+#Wants=
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rmv-lcd.py
+Restart=on-failure
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target

@@ -11,7 +11,7 @@ import RPi.GPIO as GPIO
 import Adafruit_CharLCD as LCD
 
 config = {}
-with open(os.path.join(os.path.dirname(__file__), "config.json"), "rb") as f:
+with open(os.path.join("/etc", "rmv-pi", "config.json"), "rb") as f:
     config = json.load(f)
 
 # led config
