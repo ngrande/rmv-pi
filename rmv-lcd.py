@@ -38,7 +38,7 @@ rmv_scr_path = config["rmv_scr_path"]
 
 min_minutes = config["min_minutes"]
 
-script_train_cmd = "{} {} --direction $TO$ --i3 --threshold {} --no-info".format(rmv_scr_path, start_station, min_minutes)
+script_train_cmd = "{} {} --direction $TO$ --i3 --duration 360 --threshold {} --no-info".format(rmv_scr_path, start_station, min_minutes)
 script_info_cmd = "{} {} --direction $TO$ --info-min-category 3".format(rmv_scr_path, start_station)
 
 
