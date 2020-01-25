@@ -1,6 +1,9 @@
 # RMV-Pi
 A Pi terminal to display the next trains for the train stations near you.
 
+## RMV data access
+This is just the display script for the raspberry pi but in order to work it requires yet another script: [rmv-terminal](https://github.com/ngrande/rmv-terminal/)
+
 ## Setup
 To install everything simply call `./setup.sh` (note: this requires sudo rights)
 
